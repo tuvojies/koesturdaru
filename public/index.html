@@ -2,30 +2,65 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <title> esnezinukotevteikt </title>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700&subset=latin-ext');
+
       body {
         font-family: 'Merriweather', serif;
         color: #000;
-        margin: 25px 5px 5px 12px;
+        margin: 0;
       }
-      .vārdi {
-        opacity: 0.8;
-        margin-bottom: 12px;
-      }
+
       img {
         max-width: 100%;
       }
+
+      /* ---- */
+
+      .block-text-img {
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0;
+      }
+        .block-text-img > .text {
+          flex: 1;
+          padding: 40px 25px 25px 100px;
+          font-size: 16px;
+          line-height: 21.5px;
+        }
+        .block-text-img > .image {
+          max-width: 60%;
+        }
     </style>
   </head>
   <body>
-    <div class="vārdi">
-      varbūt <b>pēc dienas tu</b> <br/>
-      beidzot sapratīsi<br/>
-      ka tas ko tu dari<br/>
-      tevi aizvedīs<br/>
-      mežā
+
+    <div class="block-text-img">
+      <div class="text">
+        varbūt <b>pēc dienas tu</b> <br/>
+        beidzot sapratīsi<br/>
+        ka tas ko tu dari<br/>
+        tevi aizvedīs<br/>
+        mežā
+      </div>
+      <div class="image">
+        <img src="nezinukodari/4.jpg"/>
+      </div>
     </div>
-    <img src="nezinukodari/4.jpg"/>
+
+    <div class="block-text-img">
+      <div class="text">
+        sabirušas lapas <br/>
+        klusi soļi aiz muguras <br/>
+        <br/>
+        mēs satiksimies <br/>
+        pēc desmit gadiem
+      </div>
+      <div class="image">
+        <img src="nezinukodari/7.jpg"/>
+      </div>
+    </div>
+
   </body>
 </html>
