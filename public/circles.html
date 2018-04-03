@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> vervaļāšote </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <style>
+      body {
+        margin: 0;
+
+      }
+    </style>
+     <script>
+      w = 1;
+
+      function setup() {
+        //createCanvas(640, 480);
+        createCanvas(windowWidth, windowHeight);
+      }
+      function draw() {
+        w = w + 0.1 ;
+        ellipse(mouseX, mouseY, w,w);
+        console.log("draw",mouseX,mouseY,w);
+        stroke (90);
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
